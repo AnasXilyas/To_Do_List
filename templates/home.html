@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="red">
+    <div align="center">  
+    <form action="http://localhost:5000/add_task" method="post">
+        <h1>TO-DO-LIST</h1><br>
+        <h3>ADD TASK</h3>
+        <input type="text" name="task_no" placeholder="Task Number"><br>
+        <input type="text" name="task" placeholder="Task Description"><br>
+        <button type="submit">Add Task</button>
+    </form>
+
+    <form action="http://localhost:5000/update_task" method="post">
+        <h3>UPDATE TASK</h3>
+        <input type="text" name="task_no" placeholder="Task Number"><br>
+        <input type="text" name="task" placeholder="New Task Description"><br>
+        <button type="submit">Update Task</button>
+    </form>
+
+    <form action="http://localhost:5000/delete_task" method="post">
+        <h3>DELETE TASK</h3>
+        <input type="text" name="task_no" placeholder="Task Number"><br>
+        <button type="submit">Delete Task</button>
+    </form>
+
+    <form action="http://localhost:5000/show_list" method="get">
+        <h2>SHOW LIST OF TASKS</h2>
+        <button type="submit">Show List</button>
+    </form>
+    </div>
+
+</body>
+</html>
